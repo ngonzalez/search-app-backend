@@ -1,0 +1,6 @@
+.DS_Store
+tmp/pids/server.pid
+tmp/cache/
+log/
+gcp.json
+.env
