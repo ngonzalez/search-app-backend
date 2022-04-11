@@ -1,6 +1,10 @@
 .DS_Store
 tmp/pids/server.pid
 tmp/cache/
-log/
+log/*.log
+.bundle
+dragonfly
+tmp
+public
 gcp.json
 .env
