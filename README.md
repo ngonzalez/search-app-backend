@@ -15,17 +15,41 @@ POST /graphql
 | Parameter | Type | Description |
 | :--- | :--- | :--- |
 | `q` | `string` | Query string |
-| `page` | `string` | **Optional** Current page |
+| `page` | `string` | Current page |
+
+## Mutation
+
+```graphql
+  mutation search(
+    $q: String!,
+    $page: Int!,
+  ) {
+    search(input: {
+      q: $q,
+      page: $page,
+    }) {
+      folders {
+        id
+        dataUrl
+        name
+      }
+      loading
+      errors
+      currentPage
+      totalPages
+    }
+  }
+```
 
 ## Response
 
 ```javascript
 {
-  "folders" : array,
-  "loading" : boolean
-  "errors" : array
-  "current_page" : integer
-  "total_pages" : integer
+  "folders" : Array,
+  "loading" : Boolean
+  "errors" : Array
+  "current_page" : Integer
+  "total_pages" : Integer
 }
 ```
 
