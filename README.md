@@ -1,8 +1,6 @@
-# README
+# search-app-backend
 
-Ruby on Rails backend for Search App.
-
-It includes a GraphQL API
+Ruby on Rails backend for Search App. It includes a GraphQL API with paginated results.
 
 ![image](https://user-images.githubusercontent.com/26479/163653446-3cf3454a-6591-4504-8f02-c238aba4d811.png)
 
