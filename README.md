@@ -43,7 +43,11 @@ POST /graphql
 
 ```javascript
 {
-  "folders" : Array,
+  "folders" : {
+    "id" : String
+    "dataUrl" : String
+    "name" : String
+  },
   "loading" : Boolean
   "errors" : Array
   "current_page" : Integer
