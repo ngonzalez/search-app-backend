@@ -39,22 +39,6 @@ POST /graphql
   }
 ```
 
-## Response
-
-```javascript
-{
-  "folders" : Array[{
-    "id" : String
-    "dataUrl" : String
-    "name" : String
-  }],
-  "loading" : Boolean
-  "errors" : Array
-  "current_page" : Integer
-  "total_pages" : Integer
-}
-```
-
 * Database creation
 ```shell
 bundle exec rails db:create
