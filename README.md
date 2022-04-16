@@ -1,15 +1,45 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Ruby on Rails backend for Search App.
 
-Things you may want to cover:
+It includes a GraphQL API
 
-* Ruby version
-`3.0.3`
+![image](https://user-images.githubusercontent.com/26479/163653446-3cf3454a-6591-4504-8f02-c238aba4d811.png)
+
+## API
+
+```http
+POST /graphql
+```
+
+| Parameter | Type | Description |
+| :--- | :--- | :--- |
+| `q` | `string` | Query string |
+| `page` | `string` | **Optional** Current page |
+
+## Response
+
+```javascript
+{
+  "folders" : array,
+  "loading" : boolean
+  "errors" : array
+  "current_page" : integer
+  "total_pages" : integer
+}
+```
 
 * Database creation
-`bundle exec rails db:create`
+```shell
+bundle exec rails db:create
+```
 
 * Database initialization
-`bundle exec rails db:migrate`
+```shell
+bundle exec rails db:migrate
+```
+
+* Start development server
+```shell
+bundle exec rails s
+```
