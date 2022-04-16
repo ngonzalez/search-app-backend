@@ -9,7 +9,7 @@ Ruby on Rails backend application. It includes a GraphQL search API with paginat
 
 ![image](https://user-images.githubusercontent.com/26479/163653446-3cf3454a-6591-4504-8f02-c238aba4d811.png)
 
-## API
+## GraphQL API
 
 ```http
 POST /graphql
@@ -20,7 +20,7 @@ POST /graphql
 | `q` | `string` | Query string |
 | `page` | `string` | Current page |
 
-## Mutation
+## GraphQL Mutation
 
 ```graphql
   mutation search(
@@ -31,7 +31,7 @@ POST /graphql
       q: $q,
       page: $page,
     }) {
-      folders {
+      results {
         id
         dataUrl
         name
@@ -43,6 +43,8 @@ POST /graphql
     }
   }
 ```
+
+## Rails application
 
 * Database creation
 ```shell

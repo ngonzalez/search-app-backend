@@ -5,7 +5,7 @@ module Mutations
     argument :q, String, required: true
     argument :page, Integer, required: true
 
-    field :folders, [Types::FolderType], null: false
+    field :results, [Types::FolderType], null: false
     field :current_page, Integer, null: false
     field :total_pages, Integer, null: false
 
@@ -15,7 +15,7 @@ module Mutations
 
       MutationResultPaginated.call(
         obj: {
-          folders: paginated_results,
+          results: paginated_results,
         },
         loading: false,
         errors: [],
