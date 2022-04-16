@@ -1,6 +1,11 @@
 # search-app-backend
 
-Ruby on Rails backend for Search App. It includes a GraphQL API with paginated results.
+```
+Author: Nicolas Gonzalez
+License: MIT
+```
+
+Ruby on Rails backend application. It includes a GraphQL search API with paginated results.
 
 ![image](https://user-images.githubusercontent.com/26479/163653446-3cf3454a-6591-4504-8f02-c238aba4d811.png)
 
