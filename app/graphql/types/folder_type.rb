@@ -7,12 +7,15 @@ module Types
 
     field :data_url, String, null: false
     field :name, String, null: false
-    field :folder, String, null: false
-    field :subfolder, String, null: false
+    field :parent_folder, String, null: false
+    field :parent_subfolder, String, null: false
     def name
       object.formatted_name
     end
-    def subfolder
+    def parent_folder
+      object.folder || 'N/A'
+    end
+    def parent_subfolder
       object.subfolder || 'N/A'
     end
   end
