@@ -18,7 +18,7 @@ POST /graphql
 | Parameter | Type | Description |
 | :--- | :--- | :--- |
 | `q` | `string` | Query string |
-| `page` | `string` | Current page |
+| `page` | `int` | Current page |
 
 ## GraphQL Mutation
 
